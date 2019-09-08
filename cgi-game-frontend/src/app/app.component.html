@@ -1,0 +1,38 @@
+<div class="container" align="center">
+
+  <div class = "jumbotron loginsize" align="center" style="background-color:white;width:90%;margin-top:50px">
+    <p style="color:Red">Game Listing App</p>
+
+    <p style="color:blue;font-size: 15px">Game List</p>
+    <div class="container">
+
+      <div class="row pull-right">
+        <div class="search-container">
+            <input type="text" placeholder="Search by name.." name="search" (input)="searchdata($event)">
+            <button type="submit" (click)="search($event)"><i class="fa fa-search"></i></button>
+
+        </div>
+      </div>
+
+
+
+
+      <div class="row" id="tab" *ngIf="Data">
+
+        <table>
+          <thead>
+
+          <tr><th>Name</th><th>Platform</th><th>Score</th><th>Genre</th><th>Editor choice</th></tr>
+          </thead>
+          <tbody *ngIf="Data">
+
+          <tr *ngFor="let data of Data"><td>{{data.title}}</td><td>{{data.platform}}</td><td>{{data.score}}</td><td>{{data.genre}}</td><td>{{data.editor_choice}}</td></tr>
+          </tbody>
+        </table>
+
+      </div>
+      <p></p>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,41 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border-radius:4px ;
+  border: 1px solid #ddd;
+
+
+}
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius:2px ;
+  border: 1px solid #ddd;
+  margin-bottom: 10%;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
